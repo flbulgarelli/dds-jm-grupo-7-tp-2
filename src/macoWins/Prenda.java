@@ -7,6 +7,10 @@ public class Prenda {
 	private Marca marca;
 	private boolean importada;
 
+	//FIXME En Java la convención es llamar a las cosas si prefijos tipo
+	//un/una, porque a diferencia de smalltalk, se puede
+	//remover la ambigüedad usando la palabra clave this:
+	//this.tipo = tipo;
 	public Prenda(int unValor, Tipo unTipo, Marca unaMarca, boolean esImportada) {
 		valorFijo = unValor;
 		tipo = unTipo;

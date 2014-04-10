@@ -15,6 +15,13 @@ public class Negocio {
 		ventas.add(unaVenta);
 	}
 
+	/* FIXME usen siempre los mensajes de orden superior de colecciones. 
+	 * ventas.stream()
+			.filter(venta -> venta.dia() == unDia)
+			.mapToDouble(Venta::valorFinal)
+			.sum();	
+	 */
+
 	public float gananciaDelDia(int unDia) {
 		int i = 0;
 		float acum = 0;
@@ -25,6 +32,7 @@ public class Negocio {
 
 		}
 
+		//FIXME no dejen printlns
 		System.out.println(acum);
 		return acum;
 

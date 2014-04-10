@@ -8,6 +8,7 @@ public class Camisa implements Tipo {
 	}
 
 	public int precio() {
+		//FIXME nunca dejen codigo comentado. Elimínenlo
 		// System.out.println(this.precio);
 		return (this.precio);
 	}
